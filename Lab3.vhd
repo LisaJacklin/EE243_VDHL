@@ -1,0 +1,32 @@
+--vhdl1 file 
+Library IEEE;
+Use Ieee.std_logic_1164.all;
+Entity Lab3 IS
+--Port (w,x,y,z : IN STD_logic_vector(1 to 4)
+
+--F : Out STD_logic;);
+
+Port ( A : in std_logic_vector (3 downto 0);
+		S: in std_logic_vector (1 downto 0);
+		X : out std_logic);
+		
+End Lab3;
+
+Architecture FourTwoOne of Lab3 is
+--signal S std_logic_vector (1 downto 0);
+begin
+with S select
+
+X <= A(0) when "00",
+	A(1) when "01",
+	A(2) when "10",
+	A(3) when "11",
+	'0' when others;
+	
+end FourTwoOne;
+
+--f <= w(0) when "00",
+	--w(1) when "01",
+
+	
+	--process (w,x,y,z
