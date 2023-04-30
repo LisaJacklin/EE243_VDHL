@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Nov 29 17:37:14 2022
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+Revision Name : lab9attp2
+Top-level Entity Name : lab9attp2
+Family : Cyclone IV E
+Total logic elements : 129
+    Total combinational functions : 109
+    Dedicated logic registers : 57
+Total registers : 57
+Total pins : 60
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

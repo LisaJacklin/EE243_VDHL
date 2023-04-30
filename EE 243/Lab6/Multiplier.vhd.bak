@@ -1,0 +1,16 @@
+--4by4 multiplier code
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+ENTITY Multiplier
+	PORT ( In:STD_LOGIC;
+			 OUT:STD_LOGIC);
+END ENTITY;
+
+ARCHITECTURE OF Multiplier IS
+		SIGNAL
+
+	BEGIN
+
+	END

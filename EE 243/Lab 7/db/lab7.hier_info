@@ -1,0 +1,523 @@
+|lab7
+HEX0[0] <= hex4to7:inst2.Y[0]
+HEX0[1] <= hex4to7:inst2.Y[1]
+HEX0[2] <= hex4to7:inst2.Y[2]
+HEX0[3] <= hex4to7:inst2.Y[3]
+HEX0[4] <= hex4to7:inst2.Y[4]
+HEX0[5] <= hex4to7:inst2.Y[5]
+HEX0[6] <= hex4to7:inst2.Y[6]
+SW[10] => Multiplier:inst0.Q[0]
+SW[10] => hex4to7:inst3.D[0]
+SW[11] => Multiplier:inst0.Q[1]
+SW[11] => hex4to7:inst3.D[1]
+SW[12] => Multiplier:inst0.Q[2]
+SW[12] => hex4to7:inst3.D[2]
+SW[13] => Multiplier:inst0.Q[3]
+SW[13] => hex4to7:inst3.D[3]
+SW[14] => Multiplier:inst0.M[0]
+SW[14] => hex4to7:inst4.D[0]
+SW[15] => Multiplier:inst0.M[1]
+SW[15] => hex4to7:inst4.D[1]
+SW[16] => Multiplier:inst0.M[2]
+SW[16] => hex4to7:inst4.D[2]
+SW[17] => Multiplier:inst0.M[3]
+SW[17] => hex4to7:inst4.D[3]
+HEX1[0] <= hex4to7:inst1.Y[0]
+HEX1[1] <= hex4to7:inst1.Y[1]
+HEX1[2] <= hex4to7:inst1.Y[2]
+HEX1[3] <= hex4to7:inst1.Y[3]
+HEX1[4] <= hex4to7:inst1.Y[4]
+HEX1[5] <= hex4to7:inst1.Y[5]
+HEX1[6] <= hex4to7:inst1.Y[6]
+HEX4[0] <= hex4to7:inst4.Y[0]
+HEX4[1] <= hex4to7:inst4.Y[1]
+HEX4[2] <= hex4to7:inst4.Y[2]
+HEX4[3] <= hex4to7:inst4.Y[3]
+HEX4[4] <= hex4to7:inst4.Y[4]
+HEX4[5] <= hex4to7:inst4.Y[5]
+HEX4[6] <= hex4to7:inst4.Y[6]
+HEX6[0] <= hex4to7:inst3.Y[0]
+HEX6[1] <= hex4to7:inst3.Y[1]
+HEX6[2] <= hex4to7:inst3.Y[2]
+HEX6[3] <= hex4to7:inst3.Y[3]
+HEX6[4] <= hex4to7:inst3.Y[4]
+HEX6[5] <= hex4to7:inst3.Y[5]
+HEX6[6] <= hex4to7:inst3.Y[6]
+
+
+|lab7|hex4to7:inst2
+D[0] => Mux0.IN19
+D[0] => Mux1.IN19
+D[0] => Mux2.IN19
+D[0] => Mux3.IN19
+D[0] => Mux4.IN19
+D[0] => Mux5.IN19
+D[0] => Mux6.IN19
+D[1] => Mux0.IN18
+D[1] => Mux1.IN18
+D[1] => Mux2.IN18
+D[1] => Mux3.IN18
+D[1] => Mux4.IN18
+D[1] => Mux5.IN18
+D[1] => Mux6.IN18
+D[2] => Mux0.IN17
+D[2] => Mux1.IN17
+D[2] => Mux2.IN17
+D[2] => Mux3.IN17
+D[2] => Mux4.IN17
+D[2] => Mux5.IN17
+D[2] => Mux6.IN17
+D[3] => Mux0.IN16
+D[3] => Mux1.IN16
+D[3] => Mux2.IN16
+D[3] => Mux3.IN16
+D[3] => Mux4.IN16
+D[3] => Mux5.IN16
+D[3] => Mux6.IN16
+Y[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+Y[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+Y[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+Y[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab7|Multiplier:inst0
+M[0] => P.IN0
+M[0] => Fig1B:u1.M1
+M[0] => Fig1C:w1.M1
+M[0] => Fig1C:N1.M1
+M[1] => Fig1B:u1.M2
+M[1] => Fig1B:u2.M1
+M[1] => Fig1C:w2.M1
+M[1] => Fig1C:N2.M1
+M[2] => Fig1B:u2.M2
+M[2] => Fig1B:u3.M1
+M[2] => Fig1C:w3.M1
+M[2] => Fig1C:N3.M1
+M[3] => Fig1B:u3.M2
+M[3] => Fig1B:u4.M1
+M[3] => Fig1C:w4.M1
+M[3] => Fig1C:N4.M1
+Q[0] => P.IN1
+Q[0] => Fig1B:u1.Q1
+Q[0] => Fig1B:u2.Q1
+Q[0] => Fig1B:u3.Q1
+Q[0] => Fig1B:u4.Q1
+Q[1] => Fig1B:u1.Q0
+Q[1] => Fig1B:u2.Q0
+Q[1] => Fig1B:u3.Q0
+Q[1] => Fig1B:u4.Q0
+Q[2] => Fig1C:w1.Q1
+Q[2] => Fig1C:w2.Q1
+Q[2] => Fig1C:w3.Q1
+Q[2] => Fig1C:w4.Q1
+Q[3] => Fig1C:N1.Q1
+Q[3] => Fig1C:N2.Q1
+Q[3] => Fig1C:N3.Q1
+Q[3] => Fig1C:N4.Q1
+P[0] <= P.DB_MAX_OUTPUT_PORT_TYPE
+P[1] <= Fig1B:u1.S
+P[2] <= Fig1C:w1.S
+P[3] <= Fig1C:N1.S
+P[4] <= Fig1C:N2.S
+P[5] <= Fig1C:N3.S
+P[6] <= Fig1C:N4.S
+P[7] <= Fig1C:N4.Cout
+
+
+|lab7|Multiplier:inst0|Fig1B:u1
+M1 => A1.IN0
+M2 => A2.IN0
+Q0 => A1.IN1
+Q1 => A2.IN1
+Cin => Adder:A4.Cin
+Cout <= Adder:A4.Cout
+S <= Adder:A4.S
+
+
+|lab7|Multiplier:inst0|Fig1B:u1|Adder:A4
+X1 => a1.IN0
+X1 => a3.IN0
+X1 => a5.IN0
+X2 => a1.IN1
+X2 => a4.IN0
+X2 => a5.IN1
+Cin => a3.IN1
+Cin => a4.IN1
+Cin => S.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab7|Multiplier:inst0|Fig1B:u2
+M1 => A1.IN0
+M2 => A2.IN0
+Q0 => A1.IN1
+Q1 => A2.IN1
+Cin => Adder:A4.Cin
+Cout <= Adder:A4.Cout
+S <= Adder:A4.S
+
+
+|lab7|Multiplier:inst0|Fig1B:u2|Adder:A4
+X1 => a1.IN0
+X1 => a3.IN0
+X1 => a5.IN0
+X2 => a1.IN1
+X2 => a4.IN0
+X2 => a5.IN1
+Cin => a3.IN1
+Cin => a4.IN1
+Cin => S.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab7|Multiplier:inst0|Fig1B:u3
+M1 => A1.IN0
+M2 => A2.IN0
+Q0 => A1.IN1
+Q1 => A2.IN1
+Cin => Adder:A4.Cin
+Cout <= Adder:A4.Cout
+S <= Adder:A4.S
+
+
+|lab7|Multiplier:inst0|Fig1B:u3|Adder:A4
+X1 => a1.IN0
+X1 => a3.IN0
+X1 => a5.IN0
+X2 => a1.IN1
+X2 => a4.IN0
+X2 => a5.IN1
+Cin => a3.IN1
+Cin => a4.IN1
+Cin => S.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab7|Multiplier:inst0|Fig1B:u4
+M1 => A1.IN0
+M2 => A2.IN0
+Q0 => A1.IN1
+Q1 => A2.IN1
+Cin => Adder:A4.Cin
+Cout <= Adder:A4.Cout
+S <= Adder:A4.S
+
+
+|lab7|Multiplier:inst0|Fig1B:u4|Adder:A4
+X1 => a1.IN0
+X1 => a3.IN0
+X1 => a5.IN0
+X2 => a1.IN1
+X2 => a4.IN0
+X2 => a5.IN1
+Cin => a3.IN1
+Cin => a4.IN1
+Cin => S.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab7|Multiplier:inst0|Fig1C:w1
+M1 => A1.IN0
+cc => Adder:A2.X2
+Q1 => A1.IN1
+Cin => Adder:A2.Cin
+Cout <= Adder:A2.Cout
+S <= Adder:A2.S
+
+
+|lab7|Multiplier:inst0|Fig1C:w1|Adder:A2
+X1 => a1.IN0
+X1 => a3.IN0
+X1 => a5.IN0
+X2 => a1.IN1
+X2 => a4.IN0
+X2 => a5.IN1
+Cin => a3.IN1
+Cin => a4.IN1
+Cin => S.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab7|Multiplier:inst0|Fig1C:w2
+M1 => A1.IN0
+cc => Adder:A2.X2
+Q1 => A1.IN1
+Cin => Adder:A2.Cin
+Cout <= Adder:A2.Cout
+S <= Adder:A2.S
+
+
+|lab7|Multiplier:inst0|Fig1C:w2|Adder:A2
+X1 => a1.IN0
+X1 => a3.IN0
+X1 => a5.IN0
+X2 => a1.IN1
+X2 => a4.IN0
+X2 => a5.IN1
+Cin => a3.IN1
+Cin => a4.IN1
+Cin => S.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab7|Multiplier:inst0|Fig1C:w3
+M1 => A1.IN0
+cc => Adder:A2.X2
+Q1 => A1.IN1
+Cin => Adder:A2.Cin
+Cout <= Adder:A2.Cout
+S <= Adder:A2.S
+
+
+|lab7|Multiplier:inst0|Fig1C:w3|Adder:A2
+X1 => a1.IN0
+X1 => a3.IN0
+X1 => a5.IN0
+X2 => a1.IN1
+X2 => a4.IN0
+X2 => a5.IN1
+Cin => a3.IN1
+Cin => a4.IN1
+Cin => S.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab7|Multiplier:inst0|Fig1C:w4
+M1 => A1.IN0
+cc => Adder:A2.X2
+Q1 => A1.IN1
+Cin => Adder:A2.Cin
+Cout <= Adder:A2.Cout
+S <= Adder:A2.S
+
+
+|lab7|Multiplier:inst0|Fig1C:w4|Adder:A2
+X1 => a1.IN0
+X1 => a3.IN0
+X1 => a5.IN0
+X2 => a1.IN1
+X2 => a4.IN0
+X2 => a5.IN1
+Cin => a3.IN1
+Cin => a4.IN1
+Cin => S.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab7|Multiplier:inst0|Fig1C:N1
+M1 => A1.IN0
+cc => Adder:A2.X2
+Q1 => A1.IN1
+Cin => Adder:A2.Cin
+Cout <= Adder:A2.Cout
+S <= Adder:A2.S
+
+
+|lab7|Multiplier:inst0|Fig1C:N1|Adder:A2
+X1 => a1.IN0
+X1 => a3.IN0
+X1 => a5.IN0
+X2 => a1.IN1
+X2 => a4.IN0
+X2 => a5.IN1
+Cin => a3.IN1
+Cin => a4.IN1
+Cin => S.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab7|Multiplier:inst0|Fig1C:N2
+M1 => A1.IN0
+cc => Adder:A2.X2
+Q1 => A1.IN1
+Cin => Adder:A2.Cin
+Cout <= Adder:A2.Cout
+S <= Adder:A2.S
+
+
+|lab7|Multiplier:inst0|Fig1C:N2|Adder:A2
+X1 => a1.IN0
+X1 => a3.IN0
+X1 => a5.IN0
+X2 => a1.IN1
+X2 => a4.IN0
+X2 => a5.IN1
+Cin => a3.IN1
+Cin => a4.IN1
+Cin => S.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab7|Multiplier:inst0|Fig1C:N3
+M1 => A1.IN0
+cc => Adder:A2.X2
+Q1 => A1.IN1
+Cin => Adder:A2.Cin
+Cout <= Adder:A2.Cout
+S <= Adder:A2.S
+
+
+|lab7|Multiplier:inst0|Fig1C:N3|Adder:A2
+X1 => a1.IN0
+X1 => a3.IN0
+X1 => a5.IN0
+X2 => a1.IN1
+X2 => a4.IN0
+X2 => a5.IN1
+Cin => a3.IN1
+Cin => a4.IN1
+Cin => S.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab7|Multiplier:inst0|Fig1C:N4
+M1 => A1.IN0
+cc => Adder:A2.X2
+Q1 => A1.IN1
+Cin => Adder:A2.Cin
+Cout <= Adder:A2.Cout
+S <= Adder:A2.S
+
+
+|lab7|Multiplier:inst0|Fig1C:N4|Adder:A2
+X1 => a1.IN0
+X1 => a3.IN0
+X1 => a5.IN0
+X2 => a1.IN1
+X2 => a4.IN0
+X2 => a5.IN1
+Cin => a3.IN1
+Cin => a4.IN1
+Cin => S.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab7|hex4to7:inst1
+D[0] => Mux0.IN19
+D[0] => Mux1.IN19
+D[0] => Mux2.IN19
+D[0] => Mux3.IN19
+D[0] => Mux4.IN19
+D[0] => Mux5.IN19
+D[0] => Mux6.IN19
+D[1] => Mux0.IN18
+D[1] => Mux1.IN18
+D[1] => Mux2.IN18
+D[1] => Mux3.IN18
+D[1] => Mux4.IN18
+D[1] => Mux5.IN18
+D[1] => Mux6.IN18
+D[2] => Mux0.IN17
+D[2] => Mux1.IN17
+D[2] => Mux2.IN17
+D[2] => Mux3.IN17
+D[2] => Mux4.IN17
+D[2] => Mux5.IN17
+D[2] => Mux6.IN17
+D[3] => Mux0.IN16
+D[3] => Mux1.IN16
+D[3] => Mux2.IN16
+D[3] => Mux3.IN16
+D[3] => Mux4.IN16
+D[3] => Mux5.IN16
+D[3] => Mux6.IN16
+Y[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+Y[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+Y[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+Y[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab7|hex4to7:inst4
+D[0] => Mux0.IN19
+D[0] => Mux1.IN19
+D[0] => Mux2.IN19
+D[0] => Mux3.IN19
+D[0] => Mux4.IN19
+D[0] => Mux5.IN19
+D[0] => Mux6.IN19
+D[1] => Mux0.IN18
+D[1] => Mux1.IN18
+D[1] => Mux2.IN18
+D[1] => Mux3.IN18
+D[1] => Mux4.IN18
+D[1] => Mux5.IN18
+D[1] => Mux6.IN18
+D[2] => Mux0.IN17
+D[2] => Mux1.IN17
+D[2] => Mux2.IN17
+D[2] => Mux3.IN17
+D[2] => Mux4.IN17
+D[2] => Mux5.IN17
+D[2] => Mux6.IN17
+D[3] => Mux0.IN16
+D[3] => Mux1.IN16
+D[3] => Mux2.IN16
+D[3] => Mux3.IN16
+D[3] => Mux4.IN16
+D[3] => Mux5.IN16
+D[3] => Mux6.IN16
+Y[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+Y[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+Y[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+Y[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab7|hex4to7:inst3
+D[0] => Mux0.IN19
+D[0] => Mux1.IN19
+D[0] => Mux2.IN19
+D[0] => Mux3.IN19
+D[0] => Mux4.IN19
+D[0] => Mux5.IN19
+D[0] => Mux6.IN19
+D[1] => Mux0.IN18
+D[1] => Mux1.IN18
+D[1] => Mux2.IN18
+D[1] => Mux3.IN18
+D[1] => Mux4.IN18
+D[1] => Mux5.IN18
+D[1] => Mux6.IN18
+D[2] => Mux0.IN17
+D[2] => Mux1.IN17
+D[2] => Mux2.IN17
+D[2] => Mux3.IN17
+D[2] => Mux4.IN17
+D[2] => Mux5.IN17
+D[2] => Mux6.IN17
+D[3] => Mux0.IN16
+D[3] => Mux1.IN16
+D[3] => Mux2.IN16
+D[3] => Mux3.IN16
+D[3] => Mux4.IN16
+D[3] => Mux5.IN16
+D[3] => Mux6.IN16
+Y[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+Y[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+Y[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+Y[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

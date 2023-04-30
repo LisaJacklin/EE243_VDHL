@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Users/lmjacklin/Desktop/EE 243/Lab4/simulation/qsim
+vEE243Lab4
+Z1 !s110 1664925575
+!i10b 1
+!s100 j7EPBz^0?Qz3BOQ]16[X21
+IXATCCfPW[FnHl;[7LSL6g2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1664925574
+Z4 8EE243Lab4.vo
+Z5 FEE243Lab4.vo
+L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1664925575.000000
+Z8 !s107 EE243Lab4.vo|
+Z9 !s90 -work|work|EE243Lab4.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+n@e@e243@lab4
+vEE243Lab4_vlg_vec_tst
+R1
+!i10b 1
+!s100 9WFeLOYnCOI1lihQoJ<SO0
+IVGUHTA9]GKM8<X[B:WJ>Q0
+R2
+R0
+w1664925573
+8Waveform5.vwf.vt
+FWaveform5.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform5.vwf.vt|
+!s90 -work|work|Waveform5.vwf.vt|
+!i113 1
+R10
+R11
+n@e@e243@lab4_vlg_vec_tst
+vhard_block
+R1
+!i10b 1
+!s100 4NV9Kahf@`mMg4T]?3Z_32
+Ihhj7^zP1_198j`YQ:j;9C0
+R2
+R0
+R3
+R4
+R5
+L0 620
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11

@@ -1,0 +1,6 @@
+EE333 LAb 4 Notes and Lab Report
+Info for Later!
+
+- Through the use of a single p2n2222A NPN transistor
+as well as an assortment of resistors, the following circuit
+is constructed.

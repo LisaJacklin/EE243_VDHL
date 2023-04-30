@@ -1,0 +1,35 @@
+|lab9
+
+
+|lab9|Counter:inst
+Clock => Over~reg0.CLK
+Clock => Q[8]~reg0.CLK
+Clock => Q[7]~reg0.CLK
+Clock => Q[6]~reg0.CLK
+Clock => Q[5]~reg0.CLK
+Clock => Q[4]~reg0.CLK
+Clock => Q[3]~reg0.CLK
+Clock => Q[2]~reg0.CLK
+Clock => Q[1]~reg0.CLK
+Clock => Q[0]~reg0.CLK
+ClearN => Q.OUTPUTSELECT
+ClearN => Q.OUTPUTSELECT
+ClearN => Q.OUTPUTSELECT
+ClearN => Q.OUTPUTSELECT
+ClearN => Q.OUTPUTSELECT
+ClearN => Q.OUTPUTSELECT
+ClearN => Q.OUTPUTSELECT
+ClearN => Q.OUTPUTSELECT
+ClearN => Q.OUTPUTSELECT
+Q[8] <= Q[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Over <= Over~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

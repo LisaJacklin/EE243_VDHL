@@ -1,0 +1,139 @@
+|Lab8
+GPIO[35] <= CLOCK_50.DB_MAX_OUTPUT_PORT_TYPE
+GPIO[34] <= <GND>
+GPIO[33] <= <GND>
+GPIO[32] <= <GND>
+GPIO[31] <= <GND>
+GPIO[30] <= <GND>
+GPIO[29] <= <GND>
+GPIO[28] <= <GND>
+GPIO[27] <= <GND>
+GPIO[26] <= <GND>
+GPIO[25] <= <GND>
+GPIO[24] <= <GND>
+GPIO[23] <= <GND>
+GPIO[22] <= <GND>
+GPIO[21] <= <GND>
+GPIO[20] <= <GND>
+GPIO[19] <= <GND>
+GPIO[18] <= <GND>
+GPIO[17] <= <GND>
+GPIO[16] <= <GND>
+GPIO[15] <= <GND>
+GPIO[14] <= <GND>
+GPIO[13] <= <GND>
+GPIO[12] <= <GND>
+GPIO[11] <= <GND>
+GPIO[10] <= <GND>
+GPIO[9] <= <GND>
+GPIO[8] <= <GND>
+GPIO[7] <= <GND>
+GPIO[6] <= <GND>
+GPIO[5] <= <GND>
+GPIO[4] <= <GND>
+GPIO[3] <= <GND>
+GPIO[2] <= <GND>
+GPIO[1] <= <GND>
+GPIO[0] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+SW[17] => 74163:inst.ENT
+SW[17] => 74163:inst.ENP
+CLOCK_50 => 74163:inst.CLK
+CLOCK_50 => 74163:inst2.CLK
+CLOCK_50 => inst1.CLK
+CLOCK_50 => GPIO[35].DATAIN
+
+
+|Lab8|74163:inst2
+clk => f74163:sub.clk
+ldn => ~NO_FANOUT~
+clrn => f74163:sub.clrn
+enp => f74163:sub.enp
+ent => f74163:sub.ent
+d => ~NO_FANOUT~
+c => ~NO_FANOUT~
+b => ~NO_FANOUT~
+a => ~NO_FANOUT~
+qd <= f74163:sub.qd
+qc <= f74163:sub.qc
+qb <= f74163:sub.qb
+qa <= f74163:sub.qa
+rco <= f74163:sub.rco
+
+
+|Lab8|74163:inst2|f74163:sub
+RCO <= 129.DB_MAX_OUTPUT_PORT_TYPE
+CLK => 134.CLK
+CLK => 122.CLK
+CLK => 111.CLK
+CLK => 34.CLK
+CLRN => 137.IN0
+CLRN => 126.IN0
+CLRN => 115.IN0
+CLRN => 68.IN0
+D => 136.IN0
+LDN => 144.IN0
+LDN => 132.IN0
+LDN => 121.IN0
+LDN => 110.IN0
+LDN => 71.IN0
+ENP => 130.IN0
+ENP => 119.IN0
+ENP => 108.IN0
+ENP => 105.IN0
+C => 124.IN0
+B => 113.IN0
+A => 70.IN0
+ENT => 140.DATAIN
+QD <= 134.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 122.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 111.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 34.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab8|74163:inst
+clk => f74163:sub.clk
+ldn => ~NO_FANOUT~
+clrn => f74163:sub.clrn
+enp => f74163:sub.enp
+ent => f74163:sub.ent
+d => ~NO_FANOUT~
+c => ~NO_FANOUT~
+b => ~NO_FANOUT~
+a => ~NO_FANOUT~
+qd <= f74163:sub.qd
+qc <= f74163:sub.qc
+qb <= f74163:sub.qb
+qa <= f74163:sub.qa
+rco <= f74163:sub.rco
+
+
+|Lab8|74163:inst|f74163:sub
+RCO <= 129.DB_MAX_OUTPUT_PORT_TYPE
+CLK => 134.CLK
+CLK => 122.CLK
+CLK => 111.CLK
+CLK => 34.CLK
+CLRN => 137.IN0
+CLRN => 126.IN0
+CLRN => 115.IN0
+CLRN => 68.IN0
+D => 136.IN0
+LDN => 144.IN0
+LDN => 132.IN0
+LDN => 121.IN0
+LDN => 110.IN0
+LDN => 71.IN0
+ENP => 130.IN0
+ENP => 119.IN0
+ENP => 108.IN0
+ENP => 105.IN0
+C => 124.IN0
+B => 113.IN0
+A => 70.IN0
+ENT => 140.DATAIN
+QD <= 134.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 122.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 111.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 34.DB_MAX_OUTPUT_PORT_TYPE
+
+

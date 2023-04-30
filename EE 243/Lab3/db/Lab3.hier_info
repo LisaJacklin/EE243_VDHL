@@ -1,0 +1,139 @@
+|Wide8
+B[7] => Lab3:G1:7:L1.A[0]
+B[6] => Lab3:G1:6:L1.A[0]
+B[5] => Lab3:G1:5:L1.A[0]
+B[4] => Lab3:G1:4:L1.A[0]
+B[3] => Lab3:G1:3:L1.A[0]
+B[2] => Lab3:G1:2:L1.A[0]
+B[1] => Lab3:G1:1:L1.A[0]
+B[0] => Lab3:G1:0:L1.A[0]
+C[7] => Lab3:G1:7:L1.A[1]
+C[6] => Lab3:G1:6:L1.A[1]
+C[5] => Lab3:G1:5:L1.A[1]
+C[4] => Lab3:G1:4:L1.A[1]
+C[3] => Lab3:G1:3:L1.A[1]
+C[2] => Lab3:G1:2:L1.A[1]
+C[1] => Lab3:G1:1:L1.A[1]
+C[0] => Lab3:G1:0:L1.A[1]
+D[7] => Lab3:G1:7:L1.A[2]
+D[6] => Lab3:G1:6:L1.A[2]
+D[5] => Lab3:G1:5:L1.A[2]
+D[4] => Lab3:G1:4:L1.A[2]
+D[3] => Lab3:G1:3:L1.A[2]
+D[2] => Lab3:G1:2:L1.A[2]
+D[1] => Lab3:G1:1:L1.A[2]
+D[0] => Lab3:G1:0:L1.A[2]
+E[7] => Lab3:G1:7:L1.A[3]
+E[6] => Lab3:G1:6:L1.A[3]
+E[5] => Lab3:G1:5:L1.A[3]
+E[4] => Lab3:G1:4:L1.A[3]
+E[3] => Lab3:G1:3:L1.A[3]
+E[2] => Lab3:G1:2:L1.A[3]
+E[1] => Lab3:G1:1:L1.A[3]
+E[0] => Lab3:G1:0:L1.A[3]
+S1[1] => Lab3:G1:0:L1.S[1]
+S1[1] => Lab3:G1:1:L1.S[1]
+S1[1] => Lab3:G1:2:L1.S[1]
+S1[1] => Lab3:G1:3:L1.S[1]
+S1[1] => Lab3:G1:4:L1.S[1]
+S1[1] => Lab3:G1:5:L1.S[1]
+S1[1] => Lab3:G1:6:L1.S[1]
+S1[1] => Lab3:G1:7:L1.S[1]
+S1[0] => Lab3:G1:0:L1.S[0]
+S1[0] => Lab3:G1:1:L1.S[0]
+S1[0] => Lab3:G1:2:L1.S[0]
+S1[0] => Lab3:G1:3:L1.S[0]
+S1[0] => Lab3:G1:4:L1.S[0]
+S1[0] => Lab3:G1:5:L1.S[0]
+S1[0] => Lab3:G1:6:L1.S[0]
+S1[0] => Lab3:G1:7:L1.S[0]
+y[7] << Lab3:G1:7:L1.X
+y[6] << Lab3:G1:6:L1.X
+y[5] << Lab3:G1:5:L1.X
+y[4] << Lab3:G1:4:L1.X
+y[3] << Lab3:G1:3:L1.X
+y[2] << Lab3:G1:2:L1.X
+y[1] << Lab3:G1:1:L1.X
+y[0] << Lab3:G1:0:L1.X
+
+
+|Wide8|Lab3:\G1:0:L1
+A[0] => Mux0.IN3
+A[1] => Mux0.IN2
+A[2] => Mux0.IN1
+A[3] => Mux0.IN0
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+X <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Wide8|Lab3:\G1:1:L1
+A[0] => Mux0.IN3
+A[1] => Mux0.IN2
+A[2] => Mux0.IN1
+A[3] => Mux0.IN0
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+X <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Wide8|Lab3:\G1:2:L1
+A[0] => Mux0.IN3
+A[1] => Mux0.IN2
+A[2] => Mux0.IN1
+A[3] => Mux0.IN0
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+X <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Wide8|Lab3:\G1:3:L1
+A[0] => Mux0.IN3
+A[1] => Mux0.IN2
+A[2] => Mux0.IN1
+A[3] => Mux0.IN0
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+X <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Wide8|Lab3:\G1:4:L1
+A[0] => Mux0.IN3
+A[1] => Mux0.IN2
+A[2] => Mux0.IN1
+A[3] => Mux0.IN0
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+X <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Wide8|Lab3:\G1:5:L1
+A[0] => Mux0.IN3
+A[1] => Mux0.IN2
+A[2] => Mux0.IN1
+A[3] => Mux0.IN0
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+X <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Wide8|Lab3:\G1:6:L1
+A[0] => Mux0.IN3
+A[1] => Mux0.IN2
+A[2] => Mux0.IN1
+A[3] => Mux0.IN0
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+X <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Wide8|Lab3:\G1:7:L1
+A[0] => Mux0.IN3
+A[1] => Mux0.IN2
+A[2] => Mux0.IN1
+A[3] => Mux0.IN0
+S[0] => Mux0.IN5
+S[1] => Mux0.IN4
+X <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,18 @@
+--using figure 1 as reference for the design
+--also note that the addercircuit from lab 5 is also 
+--included in the files for this project.
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+ENTITY Fig1B
+	PORT ( In:STD_LOGIC;
+			 OUT:STD_LOGIC);
+END ENTITY;
+
+ARCHITECTURE OF Fig1B IS
+		SIGNAL
+
+	BEGIN
+
+	END

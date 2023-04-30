@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Users/lmjacklin/Desktop/EE 243/Lab8/simulation/qsim
+vhard_block
+Z1 !s110 1668563931
+!i10b 1
+!s100 0IYiha6G>2gKWIPS[SEzN0
+IJ2;n5@0=JTAI@;iD6Z5Sg1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1668563930
+Z4 8Lab8.vo
+Z5 FLab8.vo
+L0 534
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1668563931.000000
+Z8 !s107 Lab8.vo|
+Z9 !s90 -work|work|Lab8.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vLab8
+R1
+!i10b 1
+!s100 Ki_?HYn`mh_ZUC>P5AfOg3
+IhC=cil;CMEzSogDhlZ87d1
+R2
+R0
+R3
+R4
+R5
+L0 31
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@lab8
+vLab8_vlg_vec_tst
+R1
+!i10b 1
+!s100 [UndCM<dFN3NL1I?i=j;i2
+IWiAebl@nRnZ]Chi4J>cOX2
+R2
+R0
+w1668563929
+8Waveform9.vwf.vt
+FWaveform9.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform9.vwf.vt|
+!s90 -work|work|Waveform9.vwf.vt|
+!i113 1
+R10
+R11
+n@lab8_vlg_vec_tst

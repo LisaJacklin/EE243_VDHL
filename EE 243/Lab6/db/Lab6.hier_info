@@ -1,0 +1,324 @@
+|Multiplier
+M[0] => P.IN0
+M[0] => Fig1B:u1.M1
+M[0] => Fig1C:w1.M1
+M[0] => Fig1C:N1.M1
+M[1] => Fig1B:u1.M2
+M[1] => Fig1B:u2.M1
+M[1] => Fig1C:w2.M1
+M[1] => Fig1C:N2.M1
+M[2] => Fig1B:u2.M2
+M[2] => Fig1B:u3.M1
+M[2] => Fig1C:w3.M1
+M[2] => Fig1C:N3.M1
+M[3] => Fig1B:u3.M2
+M[3] => Fig1B:u4.M1
+M[3] => Fig1C:w4.M1
+M[3] => Fig1C:N4.M1
+Q[0] => P.IN1
+Q[0] => Fig1B:u1.Q1
+Q[0] => Fig1B:u2.Q1
+Q[0] => Fig1B:u3.Q1
+Q[0] => Fig1B:u4.Q1
+Q[1] => Fig1B:u1.Q0
+Q[1] => Fig1B:u2.Q0
+Q[1] => Fig1B:u3.Q0
+Q[1] => Fig1B:u4.Q0
+Q[2] => Fig1C:w1.Q1
+Q[2] => Fig1C:w2.Q1
+Q[2] => Fig1C:w3.Q1
+Q[2] => Fig1C:w4.Q1
+Q[3] => Fig1C:N1.Q1
+Q[3] => Fig1C:N2.Q1
+Q[3] => Fig1C:N3.Q1
+Q[3] => Fig1C:N4.Q1
+P[0] << P.DB_MAX_OUTPUT_PORT_TYPE
+P[1] << Fig1B:u1.S
+P[2] << Fig1C:w1.S
+P[3] << Fig1C:N1.S
+P[4] << Fig1C:N2.S
+P[5] << Fig1C:N3.S
+P[6] << Fig1C:N4.S
+P[7] << Fig1C:N4.Cout
+
+
+|Multiplier|Fig1B:u1
+M1 => A1.IN0
+M2 => A2.IN0
+Q0 => A1.IN1
+Q1 => A2.IN1
+Cin => Adder:A4.Cin
+Cout <= Adder:A4.Cout
+S <= Adder:A4.S
+
+
+|Multiplier|Fig1B:u1|Adder:A4
+X1 => a1.IN0
+X1 => a3.IN0
+X1 => a5.IN0
+X2 => a1.IN1
+X2 => a4.IN0
+X2 => a5.IN1
+Cin => a3.IN1
+Cin => a4.IN1
+Cin => S.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Multiplier|Fig1B:u2
+M1 => A1.IN0
+M2 => A2.IN0
+Q0 => A1.IN1
+Q1 => A2.IN1
+Cin => Adder:A4.Cin
+Cout <= Adder:A4.Cout
+S <= Adder:A4.S
+
+
+|Multiplier|Fig1B:u2|Adder:A4
+X1 => a1.IN0
+X1 => a3.IN0
+X1 => a5.IN0
+X2 => a1.IN1
+X2 => a4.IN0
+X2 => a5.IN1
+Cin => a3.IN1
+Cin => a4.IN1
+Cin => S.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Multiplier|Fig1B:u3
+M1 => A1.IN0
+M2 => A2.IN0
+Q0 => A1.IN1
+Q1 => A2.IN1
+Cin => Adder:A4.Cin
+Cout <= Adder:A4.Cout
+S <= Adder:A4.S
+
+
+|Multiplier|Fig1B:u3|Adder:A4
+X1 => a1.IN0
+X1 => a3.IN0
+X1 => a5.IN0
+X2 => a1.IN1
+X2 => a4.IN0
+X2 => a5.IN1
+Cin => a3.IN1
+Cin => a4.IN1
+Cin => S.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Multiplier|Fig1B:u4
+M1 => A1.IN0
+M2 => A2.IN0
+Q0 => A1.IN1
+Q1 => A2.IN1
+Cin => Adder:A4.Cin
+Cout <= Adder:A4.Cout
+S <= Adder:A4.S
+
+
+|Multiplier|Fig1B:u4|Adder:A4
+X1 => a1.IN0
+X1 => a3.IN0
+X1 => a5.IN0
+X2 => a1.IN1
+X2 => a4.IN0
+X2 => a5.IN1
+Cin => a3.IN1
+Cin => a4.IN1
+Cin => S.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Multiplier|Fig1C:w1
+M1 => A1.IN0
+cc => Adder:A2.X2
+Q1 => A1.IN1
+Cin => Adder:A2.Cin
+Cout <= Adder:A2.Cout
+S <= Adder:A2.S
+
+
+|Multiplier|Fig1C:w1|Adder:A2
+X1 => a1.IN0
+X1 => a3.IN0
+X1 => a5.IN0
+X2 => a1.IN1
+X2 => a4.IN0
+X2 => a5.IN1
+Cin => a3.IN1
+Cin => a4.IN1
+Cin => S.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Multiplier|Fig1C:w2
+M1 => A1.IN0
+cc => Adder:A2.X2
+Q1 => A1.IN1
+Cin => Adder:A2.Cin
+Cout <= Adder:A2.Cout
+S <= Adder:A2.S
+
+
+|Multiplier|Fig1C:w2|Adder:A2
+X1 => a1.IN0
+X1 => a3.IN0
+X1 => a5.IN0
+X2 => a1.IN1
+X2 => a4.IN0
+X2 => a5.IN1
+Cin => a3.IN1
+Cin => a4.IN1
+Cin => S.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Multiplier|Fig1C:w3
+M1 => A1.IN0
+cc => Adder:A2.X2
+Q1 => A1.IN1
+Cin => Adder:A2.Cin
+Cout <= Adder:A2.Cout
+S <= Adder:A2.S
+
+
+|Multiplier|Fig1C:w3|Adder:A2
+X1 => a1.IN0
+X1 => a3.IN0
+X1 => a5.IN0
+X2 => a1.IN1
+X2 => a4.IN0
+X2 => a5.IN1
+Cin => a3.IN1
+Cin => a4.IN1
+Cin => S.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Multiplier|Fig1C:w4
+M1 => A1.IN0
+cc => Adder:A2.X2
+Q1 => A1.IN1
+Cin => Adder:A2.Cin
+Cout <= Adder:A2.Cout
+S <= Adder:A2.S
+
+
+|Multiplier|Fig1C:w4|Adder:A2
+X1 => a1.IN0
+X1 => a3.IN0
+X1 => a5.IN0
+X2 => a1.IN1
+X2 => a4.IN0
+X2 => a5.IN1
+Cin => a3.IN1
+Cin => a4.IN1
+Cin => S.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Multiplier|Fig1C:N1
+M1 => A1.IN0
+cc => Adder:A2.X2
+Q1 => A1.IN1
+Cin => Adder:A2.Cin
+Cout <= Adder:A2.Cout
+S <= Adder:A2.S
+
+
+|Multiplier|Fig1C:N1|Adder:A2
+X1 => a1.IN0
+X1 => a3.IN0
+X1 => a5.IN0
+X2 => a1.IN1
+X2 => a4.IN0
+X2 => a5.IN1
+Cin => a3.IN1
+Cin => a4.IN1
+Cin => S.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Multiplier|Fig1C:N2
+M1 => A1.IN0
+cc => Adder:A2.X2
+Q1 => A1.IN1
+Cin => Adder:A2.Cin
+Cout <= Adder:A2.Cout
+S <= Adder:A2.S
+
+
+|Multiplier|Fig1C:N2|Adder:A2
+X1 => a1.IN0
+X1 => a3.IN0
+X1 => a5.IN0
+X2 => a1.IN1
+X2 => a4.IN0
+X2 => a5.IN1
+Cin => a3.IN1
+Cin => a4.IN1
+Cin => S.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Multiplier|Fig1C:N3
+M1 => A1.IN0
+cc => Adder:A2.X2
+Q1 => A1.IN1
+Cin => Adder:A2.Cin
+Cout <= Adder:A2.Cout
+S <= Adder:A2.S
+
+
+|Multiplier|Fig1C:N3|Adder:A2
+X1 => a1.IN0
+X1 => a3.IN0
+X1 => a5.IN0
+X2 => a1.IN1
+X2 => a4.IN0
+X2 => a5.IN1
+Cin => a3.IN1
+Cin => a4.IN1
+Cin => S.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Multiplier|Fig1C:N4
+M1 => A1.IN0
+cc => Adder:A2.X2
+Q1 => A1.IN1
+Cin => Adder:A2.Cin
+Cout <= Adder:A2.Cout
+S <= Adder:A2.S
+
+
+|Multiplier|Fig1C:N4|Adder:A2
+X1 => a1.IN0
+X1 => a3.IN0
+X1 => a5.IN0
+X2 => a1.IN1
+X2 => a4.IN0
+X2 => a5.IN1
+Cin => a3.IN1
+Cin => a4.IN1
+Cin => S.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
